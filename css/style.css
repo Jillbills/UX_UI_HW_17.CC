@@ -100,19 +100,24 @@ strong {
 button {
     background-color: #36167A;
     color: #f7f7f7;
-    border-radius: 4px;
+    border-radius: 0.25rem;
     font-style: 'Inter'; sans-serif;
     font-weight: 600;
-    font-size: 20px;
-    line-height: 24px;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
     text-align: center;
-    padding: 8px 32px;
-    margin-right: 10px;
+    padding: 0.5rem 2rem;
+    margin-right: 1rem;
+    /* Use these properties below??? */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 li {
     display: inline;
-    padding: 16px;
+    padding: 1rem;
     color: ;
 }
 
@@ -121,7 +126,7 @@ li {
 }
 
 .logo {
-    align-self: center;
+    align-items: center;
     justify-content: center;
 }
 
@@ -133,14 +138,14 @@ li {
 
 .inline {
     text-align: right;
-    margin-right: 20px;
+    margin-right: 1.25rem;
 }
 .navLinks {
     font-family: 'Inter', sans-serif;
-    font-size: 20px;
+    font-size: 1.5rem;
     font-weight: 600;
-    line-height: 28px;
-    padding: 8px 8px 8px 8px;
+    line-height: 1.75rem;
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
     vertical-align: middle; 
     text-decoration-style:none;
     margin-top: 0;
@@ -164,8 +169,6 @@ li {
 
 
 
-
-
 .flexContainer {
     display: flex;
     flex-direction: row;
@@ -174,7 +177,7 @@ li {
 
 /* See Class 18.1.1 example on Flex Containers */
 
-/* Practice grid-containerPlayground */
+/* Practice grid-containerPlayground
 .grid-containerPlayground {
     display: grid;
     grid-template-columns: 8.33% 8.33% 8.33% 8.33% 8.33% 8.33% 8.33% 8.33% 8.33% 8.33% 8.33% 8.33%;
@@ -186,14 +189,14 @@ li {
 
 .hobbiesList {
     font-family: 'Raleway', sans-serif;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 600;
-    line-height: 28px;
+    line-height: 1.75rem;
     letter-spacing: -2%;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    padding: 20px;
+    padding: 1.25rem;
     margin: 0 auto;
 }
 
@@ -223,7 +226,7 @@ li {
 
 .col {
     width: 25%;
-}
+} */
 
 /* testing code for hover over images to bring in overlay
 .col:hover .overlayHover {
@@ -245,7 +248,7 @@ li {
 
 
 /* testing - not affecting webpage? */
-.Thomas {
+/* .Thomas {
     grid-column-start: 75%;
     grid-column-end: 100%;
     grid-row: 1;
@@ -273,7 +276,7 @@ li {
     grid-column-start: 75%;
     grid-column-end: 100%;
     grid-row: 2;
-}
+} */
 /* testing - not affecting webpage? */
 
 
@@ -281,11 +284,12 @@ li {
 
 .profilePic {
     flex-shrink: 1;
+    padding: 3rem;
 }
 
 .aboutCopy {
     flex-grow: 1;
-    padding: 56px;
+    padding: 3rem;
 }
 
 .solImagery {
@@ -296,42 +300,53 @@ li {
 .solCopy {
     width: 50%;
     flex-grow: 1;
+    padding: 3rem;
 }
 
 .EducateYa {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    padding-left: 2rem;
+}
+/* Alignment for this prototype img div doesn't seem to be working */
+.educateYaPrototype {
+    align-items: center;
 }
 
 .educateYaSummary {
     width: 50%;
     flex-grow: 1;
-    padding-left: 36px;
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
 
 .DeptEd {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    padding-right: 2rem;
 }
 
 .USdeptOfEducationSummary {
     width: 50%;
     flex-grow: 1;
-    padding-right: 36px;
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
 
 .Meerkat {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    padding-left: 2rem;
 }
 
 .MeerkatSummary {
     width: 50%;
     flex-grow: 1;
-    padding-left: 36px;
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
 
 .connect{
@@ -347,7 +362,7 @@ li {
 .footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-row-gap: 8 px;
+    grid-row-gap: 1rem;
     align-items: center;
     justify-content: space-evenly;
 }
@@ -360,12 +375,22 @@ li {
 .emailcIcon {
     display: flex;
     flex-direction: row;
+    align-items: center;
+}
+
+.emailText {
+    padding-left: 2rem;
 }
 
 .LinkedIncIcon {
     display: flex;
     flex-direction: row;
+    align-items: center;
 }
+.LinkedInText {
+    padding-left: 2rem;
+}
+
 }
 .footer button {
 /* I want to center this in the div */
