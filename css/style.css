@@ -1,0 +1,373 @@
+h1 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 76px;
+    font-weight: bold;
+    line-height: 84px;
+    text-transform: uppercase;
+    text-align: center; 
+}
+
+h2 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 60px;
+    font-weight: 800;
+    line-height: 68px;
+}
+
+h3 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 56px;
+}
+
+h4 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 48px;
+    letter-spacing: -4%;
+}
+
+h6 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 28px;
+    letter-spacing: -2%;
+}
+
+p {
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 28px;
+}
+
+.h2r {
+   text-align: right;
+}
+
+.header3 {
+    color: #36167A;
+    font-family: 'Raleway', sans-serif;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 56px;
+}
+
+.header4 {
+    color: #36167A;
+    font-family: 'Raleway', sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 48px;
+    letter-spacing: -4%;
+}
+
+strong {
+    color: #36167A;
+}
+
+.formText {
+    color: #425466;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.footerh1 {
+    text-align: left;
+    line-height: 16px;
+}
+
+#footerText {
+    font-family: 'Inter'; sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 16px;
+    /* why is the copyright footer text not centered? */
+    justify-content: center;
+}
+
+#h2.h2rightAlign {
+    text-align: right;
+}
+
+
+
+
+button {
+    background-color: #36167A;
+    color: #f7f7f7;
+    border-radius: 4px;
+    font-style: 'Inter'; sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    padding: 8px 32px;
+    margin-right: 10px;
+}
+
+li {
+    display: inline;
+    padding: 16px;
+    color: ;
+}
+
+.designToolsIcons {
+    text-align: right;
+}
+
+.logo {
+    align-self: center;
+    justify-content: center;
+}
+
+.navigation {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.inline {
+    text-align: right;
+    margin-right: 20px;
+}
+.navLinks {
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 28px;
+    padding: 8px 8px 8px 8px;
+    vertical-align: middle; 
+    text-decoration-style:none;
+    margin-top: 0;
+    margin-right: 2rem;
+}
+
+.heroImg {
+    display: flex;
+    justify-content: flex-start;
+}
+.scrollIcon {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.flex {
+    display: flex;
+}
+
+
+
+
+
+.flexContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* See Class 18.1.1 example on Flex Containers */
+
+/* Practice grid-containerPlayground */
+.grid-containerPlayground {
+    display: grid;
+    grid-template-columns: 8.33% 8.33% 8.33% 8.33% 8.33% 8.33% 8.33% 8.33% 8.33% 8.33% 8.33% 8.33%;
+    grid-template-rows: 50% 50%;
+    justify-content: space-evenly;
+    width: 100%;
+}
+/* Practice grid-containerPlayground */
+
+.hobbiesList {
+    font-family: 'Raleway', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 28px;
+    letter-spacing: -2%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.row1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.col-4 {
+    width: 33.33%;
+}
+
+.col-5 {
+    width: 41.70%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.row2 {
+    display: flex;
+    flex-direction: row;
+}
+
+.col {
+    width: 25%;
+}
+
+/* testing code for hover over images to bring in overlay
+.col:hover .overlayHover {
+    opacity:1;
+}
+.overlayHover {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: 0.5x ease;
+} */
+/* testing code for hover over images to bring in overlay */
+
+
+
+/* testing - not affecting webpage? */
+.Thomas {
+    grid-column-start: 75%;
+    grid-column-end: 100%;
+    grid-row: 1;
+}
+
+.IlleniumStage {
+    grid-column-start: 0%;
+    grid-column-end: 25%;
+    grid-row: 2;
+}
+
+.lanternFestivalNight {
+    grid-column-start: 25%;
+    grid-column-end: 50%;
+    grid-row: 2;
+}
+
+.KauaiBeach {
+    grid-column-start: 50%;
+    grid-column-end: 75%;
+    grid-row: 2;
+}
+
+.ladyPainting {
+    grid-column-start: 75%;
+    grid-column-end: 100%;
+    grid-row: 2;
+}
+/* testing - not affecting webpage? */
+
+
+
+
+.profilePic {
+    flex-shrink: 1;
+}
+
+.aboutCopy {
+    flex-grow: 1;
+    padding: 56px;
+}
+
+.solImagery {
+    width: 50%;
+    flex-grow: 1;
+}
+
+.solCopy {
+    width: 50%;
+    flex-grow: 1;
+}
+
+.EducateYa {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.educateYaSummary {
+    width: 50%;
+    flex-grow: 1;
+    padding-left: 36px;
+}
+
+.DeptEd {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.USdeptOfEducationSummary {
+    width: 50%;
+    flex-grow: 1;
+    padding-right: 36px;
+}
+
+.Meerkat {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.MeerkatSummary {
+    width: 50%;
+    flex-grow: 1;
+    padding-left: 36px;
+}
+
+.connect{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.form {
+
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row-gap: 8 px;
+    border: 5px solid red;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.connectIcons {
+    display: flex;
+    flex-direction: column;
+}
+
+.emailcIcon {
+    display: flex;
+    flex-direction: row;
+}
+
+.LinkedIncIcon {
+    display: flex;
+    flex-direction: row;
+}
+}
+.footer button {
+/* I want to center this in the div */
+}
