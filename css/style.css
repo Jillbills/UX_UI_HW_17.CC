@@ -425,9 +425,8 @@ li {
     justify-content: space-between;
 }
 
-/* Left margin for the form doesn't appear to be working */
-.form {
-    margin-left: 2rem;
+form {
+    margin-left: 12rem;
 }
 
 .connectGIF {
