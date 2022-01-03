@@ -171,6 +171,8 @@ button:hover {
 .logo {
     align-items: center;
     justify-content: center;
+    margin-left: 2rem;
+    margin-top: 2rem;
 }
 
 
@@ -311,8 +313,6 @@ li {
 
 
 /* HERO Section */
-/* hero section background color not working on heroContent class to cover entire section
-- unsure why because it is the parent and looks like it should work??? */
 .heroContent {
     background-color: #6667AB;
 }
@@ -321,7 +321,11 @@ li {
     display: flex;
     justify-content: flex-start;
     background-color: #6667AB;
+    padding-top: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
+
 .scrollIcon {
     display: flex;
     justify-content: center;
@@ -361,32 +365,38 @@ li {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding-left: 2rem;
+    margin-left: 3rem;
 }
 /* Alignment for this prototype img div doesn't seem to be working */
 .educateYaPrototype {
     align-items: center;
+    margin-left: 3rem;
 }
 
 .educateYaSummary {
     width: 50%;
     flex-grow: 1;
-    padding-left: 2rem;
-    padding-right: 2rem;
+    margin-left: 2rem;
+    margin-right: 3rem;
 }
 
 .DeptEd {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding-right: 2rem;
+    margin-right: 2rem;
+    margin-left: 3rem;
 }
 
 .USdeptOfEducationSummary {
     width: 50%;
     flex-grow: 1;
-    padding-left: 2rem;
-    padding-right: 2rem;
+    margin-left: 3rem;
+    margin-right: 2rem;
+}
+
+.edCoverImage {
+    margin-right: 3rem;
 }
 
 .Meerkat {
@@ -396,11 +406,15 @@ li {
     padding-left: 2rem;
 }
 
+.MeerkatCoverImage {
+    margin-left: 3rem;
+}
+
 .MeerkatSummary {
     width: 50%;
     flex-grow: 1;
     padding-left: 2rem;
-    padding-right: 2rem;
+    margin-right: 3rem;
 }
 
 
