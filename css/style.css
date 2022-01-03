@@ -116,9 +116,11 @@ strong {
 
 /* BUTTON/ASSETS STYLES */
 button {
-    background-color: #36167A;
-    color: #f7f7f7;
-    border-radius: 0.25rem;
+    border: 3px solid #6667AB;
+    border-radius: 4px;
+    color: #6667AB;
+    box-sizing: border-box;
+    background-color: transparent;
     font-style: 'Inter'; sans-serif;
     font-weight: 600;
     font-size: 1.25rem;
@@ -131,6 +133,29 @@ button {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    padding: 0.5rem 2rem;
+}
+
+button:hover {
+    background-color: #6667AB;
+    color: #F1F0F4;
+    border: 3px solid #6667AB;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+    font-style: 'Inter'; sans-serif;
+    font-weight: 600;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    text-align: center;
+    padding: 0.5rem 2rem;
+    margin-right: 1rem;
+    /* Use these properties below??? */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem 2rem;
 }
 
 .designToolsIcons {
@@ -454,4 +479,22 @@ li {
 
 .footer button {
 /* I want to center this in the div */
+    border: 3px solid #ECE5BA;
+    border-radius: 4px;
+    color: #ECE5BA;
+    box-sizing: border-box;
+    background-color: #6667AB;
+}
+
+.footer button:hover {
+    background: #F1F0F4;
+    color: #6667AB;
+    border-color: #F1F0F4;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem 2rem;
 }
