@@ -22,8 +22,8 @@ h3 {
     font-family: 'Raleway', sans-serif;
     font-size: 48px;
     font-weight: 600;
-    line-height: 56px;
-    border: 5px solid red;
+    margin-block-end: 0;
+    margin-block-start: 0;
 }
 
 h4 {
@@ -32,6 +32,8 @@ h4 {
     font-weight: 600;
     line-height: 48px;
     letter-spacing: -4%;
+    margin-block-end: 0;
+    margin-block-start: 0;
 }
 
 h6 {
@@ -41,7 +43,8 @@ h6 {
     font-weight: 600;
     line-height: 28px;
     letter-spacing: -2%;
-    border: 5px solid red;
+    margin-block-end: 0;
+    margin-block-start: 0;
 }
 
 p {
@@ -76,6 +79,7 @@ strong {
     color: #6667AB;
 }
 
+/* How do I change the form text/font style for the Yes/No responses? */
 .formText {
     color: #4C5064;
     font-family: 'Inter', sans-serif;
@@ -209,8 +213,6 @@ li {
     display: flex;
 }
 
-
-
 .flexContainer {
     display: flex;
     flex-direction: row;
@@ -253,8 +255,10 @@ li {
     width: 33.33%;
 }
 
+/* How do I get this col-5 class with family photo to right align along grid? */
 .col-5 {
-    width: 41.70%;
+    width: 41.67%;
+    justify-content: flex-end;
 }
 
 .col-3 {
@@ -268,28 +272,11 @@ li {
 
 .col {
     width: 25%;
-} */
-
-/* testing code for hover over images to bring in overlay
-.col:hover .overlayHover {
-    opacity:1;
+    justify-content: space-evenly;
 }
-.overlayHover {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    width: 100%;
-    opacity: 0;
-    transition: 0.5x ease;
-} */
-/* testing code for hover over images to bring in overlay */
 
 
-
-/* testing - not affecting webpage? */
+/* Testing grid code - not currently influencing webpage */
 /* .Thomas {
     grid-column-start: 75%;
     grid-column-end: 100%;
@@ -319,12 +306,13 @@ li {
     grid-column-end: 100%;
     grid-row: 2;
 } */
-/* testing - not affecting webpage? */
+/* testing - not affecting webpage */
 
 
 
 /* HERO Section */
-/* hero section background color not working??? */
+/* hero section background color not working on heroContent class to cover entire section
+- unsure why because it is the parent and looks like it should work??? */
 .heroContent {
     background-color: #6667AB;
 }
@@ -332,6 +320,7 @@ li {
 .heroImg {
     display: flex;
     justify-content: flex-start;
+    background-color: #6667AB;
 }
 .scrollIcon {
     display: flex;
@@ -422,8 +411,15 @@ li {
     justify-content: space-between;
 }
 
+/* Left margin for the form doesn't appear to be working */
 .form {
+    margin-left: 2rem;
+}
 
+.connectGIF {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
 }
 
 
@@ -440,43 +436,30 @@ li {
 .connectIcons {
     display: flex;
     flex-direction: column;
+    padding-left: 2rem;
 }
 
 .emailWithIcon {
     display: flex;
     flex-direction: row;
-    align-items: flex-end;
-    border: 5px solid red;
-}
-
-.emailIcon {
-    align-items: flex-end;
-    border: 5px solid red;
+    align-items: center;
 }
 
 .emailText {
     color: #F1F0F4;
     padding-left: 2rem;
-    text-align: flex-end;
-    border: 5px solid red;
 }
 
 .LinkedInWithIcon {
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
-    border: 5px solid red;
-}
-
-.LinkedInIcon {
-    border: 5px solid red;
+    align-items: center;
+    padding-top: 1rem;
 }
 
 .LinkedInText {
     color: #F1F0F4;
     padding-left: 2rem;
-    text-align: flex-start;
-    border: 5px solid red;
 }
 
 .footer button {
@@ -486,6 +469,7 @@ li {
     color: #ECE5BA;
     box-sizing: border-box;
     background-color: #6667AB;
+    margin-top: 1rem;
 }
 
 .footer button:hover {

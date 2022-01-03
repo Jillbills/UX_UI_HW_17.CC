@@ -18,9 +18,10 @@
 
 
 
-<!--add anchor tags to topnav <a href="#about">???-->
+<!--Add anchor tags to topnav <a href="#about">, defer until we learn more on JavaScript???-->
 <body>
     <header class="navigation">
+        <!-- Add new edited logo and fix spacing -->
         <div class="logo">
             <img src="images/JVan_logo_small.png" alt="Jill Van's logo" width="150px" height="75px">
         </div>
@@ -102,7 +103,7 @@
                     <img src="images/SOLdecals.png" alt="Stick Out Loud decals" width="640px" height="226px">
                     <br>
                     <br>
-                    <button type="button" button onclick="https://www.stickoutloud.com/">Explore</button>
+                    <button type="button" onclick="location.href='http://stickoutloud.com/'">Explore</button>
                 </div>
                 <div class="solCopy">
                     <img src="images/SOLonEtsy.png" alt="Stick Out Loud Custom vinyl decals on Etsy" width="397px" height="92px"><br>
@@ -119,7 +120,7 @@
 
         <div class="myPlayground">
             <h2 class="h2r">My Playground</h2>
-<!--Testing bootstrap grid--> 
+<!--Testing out bootstrap grid - need to figure out alignment/spacing of family photo on top row--> 
                     <div class="row1">
                         <div class="col-4">
                             <div class="hobbiesList">
@@ -144,8 +145,8 @@
                     <div class="row2">
                         <div class="col">
                             <img class="IlleniumMain" src="images/playgroundImages/IlleniumStage.png" alt="Illenium concert stage">
-                            <!--This part isn't working. I'm trying to create hover overlay image-->
-                            <img class="overlayHover" src="images/playgroundImages/IlleniumPurpleLogo.png" alt="Illenium purple logo">
+                            <!--This part isn't working. I need to do this with JavaScript to create hover overlay image-->
+                            <!-- <img class="overlayHover" src="images/playgroundImages/IlleniumPurpleLogo.png" alt="Illenium purple logo"> -->
                             <!--This part isn't working. I'm trying to create hover overlay image-->
                         </div>
                         <div class="col">
@@ -160,34 +161,6 @@
                     </div>
             </div>
         </div>
-
-
-
-
-
-<!--testing flexbox code-->
-<!--<div id="row" class="flex">
-    <div class="flex_item">
-      pic1
-    </div>
-    <div class="flex_item">
-      pic2
-    </div>
-    <div class="flex_item">
-      pic3
-    </div>
-    <div class="flex_item">
-      pic4
-    </div>
-  </div>-->
-
-
-
-
-
-
-
-
             <br>
             <br>
             <br>
@@ -236,6 +209,7 @@
         <h1>Work</h1>
         <div class="EducateYa">
             <!--Why is my mobile GIF not showing up? Does PNG files do GIF?-->
+            <!-- To do: Replace Case Study cover slides with Mockup GIFS -->
             <div class="educateYaPrototype">
             <img src="images/caseStudyImages/EYRWDMockupSmall.png" alt="Edúcate Ya showcase redesign image" width="595px" height="350px">
             </div>
@@ -301,8 +275,7 @@
     <h1>Let's Connect</h1>
     <section class="connect">
         <!--Check form action tutorial - where will the form take you?-->
-        <!--How do I change the width of form input field? in HTML, CSS, JavaScript-->
-        <!--How do I change the form text ID so it can link to my "formText" style?-->
+        <!--How do I change the form text/font style for the Yes/No responses?-->
         <form action="/desktopConnectionConfirmation.php">
             <label for="name" class="formText" size="50px" c>Name*</label><br>
             <input type="text" class="formText" id="name" name="name" placeholder="Enter your preferred name" size="40"><br>
@@ -322,7 +295,9 @@
             <label for="messageBoxNote" class="formText">I'll never share your email with anyone else</label><br><br>
             <button type="button">Submit</button>
         </form>
+        <div class="connectGIF">
         <iframe src="https://giphy.com/embed/KEHi4pArjMWOSnpQfh" width="480" height="356" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/RosannaPansino-ro-rosanna-pansnio-KEHi4pArjMWOSnpQfh"></a></p>
+        </div>
         <br>
         <br>
         <br>
@@ -353,20 +328,12 @@
 
     <div class="connectIcons">
         <div class="emailWithIcon">
-            <div class="emailIcon">
-                <img src="images/emailIcon.png" alt="email icon" width="60px" height="42px">
-            </div>
-            <div>
-                <h4 class="emailText">Email</h4>
-            </div>
+            <img src="images/emailIcon.png" alt="email icon" width="60px" height="42px">
+            <h4 class="emailText">Email</h4>
         </div>
         <div class="LinkedInWithIcon">
-            <div class="LinkedInIcon">
-                <img src="images/LinkedInIcon.png" alt="LinkedIn icon" width="60px" height="55px">
-            </div>
-            <div>
-                <h4 class="LinkedInText">LinkedIn</h4>
-            </div>
+            <img src="images/LinkedInIcon.png" alt="LinkedIn icon" width="60px" height="55px">
+            <h4 class="LinkedInText">LinkedIn</h4>
         </div>
     </div>
 
