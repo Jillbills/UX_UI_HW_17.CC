@@ -338,6 +338,7 @@ li {
 /* WORK Section */
 .work {
     background-color: #F1F0F4;
+    padding-top: 0.5rem;
 }
 
 .EducateYa {
@@ -427,6 +428,7 @@ li {
 }
 
 .emailText {
+    color: #F1F0F4;
     padding-left: 2rem;
     text-align: flex-end;
     border: 5px solid red;
@@ -444,6 +446,7 @@ li {
 }
 
 .LinkedInText {
+    color: #F1F0F4;
     padding-left: 2rem;
     text-align: flex-start;
     border: 5px solid red;
