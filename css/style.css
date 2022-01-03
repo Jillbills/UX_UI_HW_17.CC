@@ -1,4 +1,6 @@
+/* TEXT/FONT/COPY Styles */
 h1 {
+    color: #333B7E;
     font-family: 'Oswald', sans-serif;
     font-size: 76px;
     font-weight: bold;
@@ -8,6 +10,7 @@ h1 {
 }
 
 h2 {
+    color: #4C5064;
     font-family: 'Raleway', sans-serif;
     font-size: 60px;
     font-weight: 800;
@@ -15,6 +18,7 @@ h2 {
 }
 
 h3 {
+    color: #4C5064;
     font-family: 'Raleway', sans-serif;
     font-size: 48px;
     font-weight: 600;
@@ -30,6 +34,7 @@ h4 {
 }
 
 h6 {
+    color: #6667AB;
     font-family: 'Raleway', sans-serif;
     font-size: 24px;
     font-weight: 600;
@@ -49,7 +54,7 @@ p {
 }
 
 .header3 {
-    color: #36167A;
+    color: #4C5064;
     font-family: 'Raleway', sans-serif;
     font-size: 48px;
     font-weight: 600;
@@ -57,7 +62,7 @@ p {
 }
 
 .header4 {
-    color: #36167A;
+    color: #6667AB;
     font-family: 'Raleway', sans-serif;
     font-size: 40px;
     font-weight: 600;
@@ -66,26 +71,39 @@ p {
 }
 
 strong {
-    color: #36167A;
+    color: #6667AB;
 }
 
 .formText {
-    color: #425466;
+    color: #4C5064;
     font-family: 'Inter', sans-serif;
     font-weight: 500;
     font-size: 14px;
 }
 
 .footerh1 {
+    color: #F1F0F4;
     text-align: left;
     line-height: 16px;
+    padding-left: 2rem;
+}
+
+.footerh6 {
+    color: #F1F0F4;
+    font-family: 'Raleway', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 28px;
+    letter-spacing: -2%;
 }
 
 #footerText {
+    color: #F1F0F4;
     font-family: 'Inter'; sans-serif;
     font-size: 12px;
     font-weight: normal;
     line-height: 16px;
+    padding-left: 2rem;
     /* why is the copyright footer text not centered? */
     justify-content: center;
 }
@@ -96,7 +114,7 @@ strong {
 
 
 
-
+/* BUTTON/ASSETS STYLES */
 button {
     background-color: #36167A;
     color: #f7f7f7;
@@ -115,12 +133,6 @@ button {
     align-items: center;
 }
 
-li {
-    display: inline;
-    padding: 1rem;
-    color: ;
-}
-
 .designToolsIcons {
     text-align: right;
 }
@@ -128,6 +140,14 @@ li {
 .logo {
     align-items: center;
     justify-content: center;
+}
+
+
+/* NAV STYLES */
+li {
+    display: inline;
+    padding: 1rem;
+    color: ;
 }
 
 .navigation {
@@ -141,6 +161,7 @@ li {
     margin-right: 1.25rem;
 }
 .navLinks {
+    color: #333B7E;
     font-family: 'Inter', sans-serif;
     font-size: 1.5rem;
     font-weight: 600;
@@ -152,17 +173,11 @@ li {
     margin-right: 2rem;
 }
 
-.heroImg {
-    display: flex;
-    justify-content: flex-start;
-}
-.scrollIcon {
-    display: flex;
-    justify-content: center;
-}
 
 
 
+
+/* FLEXBOX Styles */
 .flex {
     display: flex;
 }
@@ -281,7 +296,23 @@ li {
 
 
 
+/* HERO Section */
+/* hero section background color not working??? */
+.heroContent {
+    background-color: #6667AB;
+}
 
+.heroImg {
+    display: flex;
+    justify-content: flex-start;
+}
+.scrollIcon {
+    display: flex;
+    justify-content: center;
+}
+
+
+/* ABOUT Section */
 .profilePic {
     flex-shrink: 1;
     padding: 3rem;
@@ -301,6 +332,12 @@ li {
     width: 50%;
     flex-grow: 1;
     padding: 3rem;
+}
+
+
+/* WORK Section */
+.work {
+    background-color: #F1F0F4;
 }
 
 .EducateYa {
@@ -349,6 +386,8 @@ li {
     padding-right: 2rem;
 }
 
+
+/* CONNECT Section */
 .connect{
     display: flex;
     flex-direction: row;
@@ -359,7 +398,10 @@ li {
 
 }
 
+
+/* FOOTER Styles */
 .footer {
+    background-color: #6667AB;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-row-gap: 1rem;
