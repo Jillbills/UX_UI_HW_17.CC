@@ -171,8 +171,6 @@ button:hover {
 
 /* NAV STYLES */
 .logo {
-    align-items: flex-end;
-    justify-content: flex-start;
     margin-left: 2rem;
 }
 
@@ -187,13 +185,9 @@ li {
     list-style-type: none;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 }
 
-.topNav {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-}
 
 .inline {
     text-align: right;
@@ -338,12 +332,15 @@ This grid code isn't quite working - not sure why or how to get images to align 
 }
 
 .heroImg {
-    display: flex;
-    justify-content: flex-start;
     background-color: #6667AB;
     padding-top: 2rem;
     padding-left: 2rem;
     padding-right: 2rem;
+    width: 100%;
+}
+
+.hero{
+    width: 100%;
 }
 
 .scrollIcon {
