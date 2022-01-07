@@ -388,7 +388,7 @@ This grid code isn't quite working - not sure why or how to get images to align 
 
 
 /* WORK Section */
-.work {
+#work {
     background-color: #F1F0F4;
     padding-top: 0.5rem;
 }
@@ -451,7 +451,7 @@ This grid code isn't quite working - not sure why or how to get images to align 
 
 
 /* CONNECT Section */
-.connect{
+#connect{
     display: flex;
     flex-direction: row;
     justify-content: space-between;

@@ -18,9 +18,12 @@
 
 
 
-<!--Add anchor tags to topnav - defer until we learn more on JavaScript-->
+<!--Add anchor tags to topnav - defer until we learn more on JavaScript?-->
+<!-- How to I get rid of the underline under my topnav anchor tags? -->
+<!-- Need to fix spacing so there's space above "About" when it anchors to About section -->
 <!-- Need to figure out why the scrollIcon div background doesn't span 100% - working with Skog on this in office hours -->
 <body>
+<!-- Header with topNav bar -->
     <header class="navigation">
         <div class="logo">
             <img src="images/LogoJVanRound.svg" alt="Jill Van's logo" width="150px" height="75px">
@@ -28,9 +31,12 @@
         <div class="topNav">
             <nav class="inline">
                 <ul>
-                    <li class="navLinks">About</li>
-                    <li class="navLinks">Work</li>
-                    <li class="navLinks">Connect</li>
+                    <a href="#about"><li class="navLinks">About</li></a>
+                    <a href="#work"><li class="navLinks">Work</li></a>
+                    <a href="#connect"><li class="navLinks">Connect</li></a>
+                    <!-- <li class="navLinks">About</li> -->
+                    <!-- <li class="navLinks">Work</li>
+                    <li class="navLinks">Connect</li> -->
                 </ul>
                 <br>
             </nav>
@@ -65,8 +71,9 @@
         <br>
     </section>
 
+
 <!--ABOUT Section-->
-    <section class="about">
+    <section id="about">
         <div class="aboutIntro"></div>
             <h1>About</h1>
             <div class="flexContainer">
@@ -188,7 +195,7 @@
 
 
 <!--WORK Section-->
-    <section class="work">
+    <section id="work">
         <h1>Work</h1>
         <div class="EducateYa">
             <!--Why is my mobile GIF not showing up? Does PNG files do GIF?-->
@@ -267,7 +274,7 @@
 
 <!--CONNECT Section-->
     <h1>Let's Connect</h1>
-    <section class="connect">
+    <section id="connect">
         <!--Check out the form action tutorial - where will the form take you?-->
         <!--How do I change the form text/font style for the Yes/No responses?-->
         <form action="/desktopConnectionConfirmation.php">
