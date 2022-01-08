@@ -239,9 +239,11 @@ li {
     margin: 0 auto;
 }
 
+/* v1 grid coding */
+/* grid-template-columns: 33.33% 41.67% 25%; */
 .row1 {
     display: grid;
-    grid-template-columns: 33.33% 41.67% 25%;
+    grid-template-columns: 4fr 5fr 3fr;
     margin-left: 2rem;
     margin-right: 2rem;
 }
@@ -252,76 +254,59 @@ li {
     margin-left: 2rem;
     margin-right: 2rem;
 }
-/* Row 2 columns each occupy 25% of the area  */
 .col25 {
     justify-content: space-evenly;
 } 
+/* Row 2 columns each occupy 25% of the area  */
 
 
 
-
-
-/* Testing grid code 1- not currently influencing webpage */
-/* .row1 {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin-left: 2rem;
-    margin-right: 2rem;
-}
-
-.col01List {
-    width: 33.33%;
-}
-
-.col02topRow {
-    width: 41.67%;
-    justify-content: flex-end;
-}
-
-.col03topRow {
-    width: 25%;
-} 
-
-.row2 {
-    display: flex;
-    flex-direction: row;
-    margin-left: 2rem;
-    margin-right: 2rem;
-}
-/* testing - not affecting webpage */
-
-
-/* Testing grid code 2 - How do I get this col02 class with family photo to right align along grid?
+/* Testing grid code v2 - How do I get family photo to right align along grid?
 This grid code isn't quite working - not sure why or how to get images to align along the 12 column grid */
-
-/* .myPlayground {
+/* 
+.myPlaygroundGrid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 4fr 5fr 3fr;
     grid-template-rows: 1fr 1fr;
     grid-template-areas: 
-        "col01List col01List col01List col01List col02topRow col02topRow col02topRow col02topRow col02topRow col03topRow col03topRow col03topRow"
-        "col25 col25 col25 col25";
+        "hobbiesList familyPhoto playgroundThomas"
+        "IlleniumMain lanternFestivalNight KauaiBeach ladyPainting"
+        ;
     margin-left: 2rem;
     margin-right: 2rem;
 }
 
-.col01List {
-    grid-area: col01List;
+.hobbiesList {
+    grid-area: hobbiesList;
 }
 
-.col02topRow {
-    grid-area: col02topRow;
+.familyPhoto {
+    grid-area: familyPhoto;
 }
 
-.col03topRow {
-    grid-area: col03topRow;
+.playgroundThomas {
+    grid-area: playgroundThomas;
 }
 
-.col25 {
-    grid-area: col25;
+.IlleniumMain {
+    grid-area: IlleniumMain;
+}
+
+.lanternFestivalNight {
+    grid-area: lanternFestivalNight;
+}
+
+.KauaiBeach {
+    grid-area: KauaiBeach;
+}
+
+.ladyPainting {
+    grid-area: ladyPainting;
 } */
+
+
+
+
 
 
 
