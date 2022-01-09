@@ -174,29 +174,30 @@ button:hover {
     margin-left: 2rem;
 }
 
-li {
-    display: inline;
-    padding: 1rem;
-}
-
 .navigation {
     padding: 0;
     margin: 0;
     list-style-type: none;
     display: flex;
     flex-direction: row;
+    align-items: center;
     justify-content: space-between;
 }
 
+.topNav {
+    align-items: flex-end;
+    margin-right: 3rem;
+    margin-top: 3rem;
+}
 
 .inline {
+    display: inline;
     text-align: right;
     justify-content: flex-end;
-    margin-right: 2rem;
-    margin-top: 1.5rem;
 }
 
 .navLinks {
+    display: inline;
     color: #333B7E;
     font-family: 'Inter', sans-serif;
     font-size: 1.5rem;
@@ -204,7 +205,9 @@ li {
     line-height: 1.75rem;
     padding: 0.5rem 0.5rem 0.5rem 0.5rem;
     vertical-align: middle; 
-    text-decoration-style:none;
+/* Why are these list style codes not removing the underline style for the list items?
+    text-decoration-style: none;
+    list-style-type: none; */
     margin-top: 0.5rem;
 }
 
@@ -335,6 +338,10 @@ This grid code isn't quite working - not sure why or how to get images to align 
 
 
 /* ABOUT Section */
+#about {
+    padding-top: 0.5rem;
+}
+
 .profilePic {
     flex-shrink: 1;
     padding: 3rem;
@@ -437,19 +444,24 @@ This grid code isn't quite working - not sure why or how to get images to align 
 
 /* CONNECT Section */
 #connect{
+    padding-top: 0.5rem;
+}
+
+.formSection {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 form {
-    margin-left: 12rem;
+    margin-left: 8rem;
 }
 
 .connectGIF {
     display: flex;
     align-items: flex-start;
     justify-content: center;
+    margin-right: 8rem;
 }
 
 
