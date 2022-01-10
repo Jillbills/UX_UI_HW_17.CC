@@ -111,12 +111,11 @@ strong {
     line-height: 16px;
     padding-left: 3rem;
     /* why is the copyright footer text not centered? */
-    justify-content: center;
 }
 
-#h2.h2rightAlign {
+/* #h2.h2rightAlign {
     text-align: right;
-}
+} */
 
 
 
@@ -205,10 +204,11 @@ button:hover {
     line-height: 1.75rem;
     padding: 0.5rem 0.5rem 0.5rem 0.5rem;
     vertical-align: middle; 
-/* Why are these list style codes not removing the underline style for the list items?
-    text-decoration-style: none;
-    list-style-type: none; */
     margin-top: 0.5rem;
+}
+
+a {
+    text-decoration: none;
 }
 
 
@@ -471,14 +471,52 @@ form {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-row-gap: 1rem;
+    grid-template-rows: 1.75fr 0.25fr;
+    grid-template-areas: 
+        "footerh1 connectIcons footerResume"
+        "#footerText #footerText #footerText"
+        ;
     align-items: center;
     justify-content: space-evenly;
 }
+
+/* .footerh1 {
+    grid-area: footerh1;
+} */
 
 .connectIcons {
     display: flex;
     flex-direction: column;
     padding-left: 2rem;
+    /* grid-area: connectIcons; */
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.footerh1 {
+    color: #F1F0F4;
+    text-align: left;
+    /* line-height: 16px; */
+    padding-left: 2rem;
+}
+
+.footerh6 {
+    color: #F1F0F4;
+    font-family: 'Raleway', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 28px;
+    letter-spacing: -2%;
+}
+
+#footerText {
+    color: #F1F0F4;
+    font-family: 'Inter'; sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 16px;
+/* Why can't I get this p id div to center across the entire width?  */
+    margin-left: 4rem;
 }
 
 .emailWithIcon {
